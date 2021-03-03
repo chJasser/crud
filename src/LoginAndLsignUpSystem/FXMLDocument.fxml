@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1199.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginAndLsignUpSystem.FXMLDocumentController">
+    <children>
+        <AnchorPane layoutY="39.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <AnchorPane fx:id="AnchorSingup" layoutX="670.0" prefHeight="520.0" prefWidth="526.0" style="-fx-background-color: #ffff;">
+                    <children>
+                  <ImageView fx:id="close1" fitHeight="18.0" fitWidth="63.0" layoutX="503.0" layoutY="5.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/close-button.png" />
+                     </image>
+                  </ImageView>
+                        <Label layoutX="216.0" layoutY="27.0" prefHeight="18.0" prefWidth="155.0" text="s'inscrire" textFill="#ff002f">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nom" layoutX="88.0" layoutY="94.0" prefHeight="42.0" prefWidth="350.0" promptText="nom" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="prenom" layoutX="88.0" layoutY="169.0" prefHeight="42.0" prefWidth="350.0" promptText="prénom" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="emailSignup" layoutX="88.0" layoutY="239.0" prefHeight="42.0" prefWidth="350.0" promptText="email" style="-fx-background-radius: 5;" />
+                        <PasswordField fx:id="passSignup1" layoutX="88.0" layoutY="312.0" prefHeight="42.0" prefWidth="350.0" promptText="mots de passe" style="-fx-background-radius: 5;" />
+                        <PasswordField fx:id="passSignup2" layoutX="88.0" layoutY="380.0" prefHeight="42.0" prefWidth="350.0" promptText="confirmer mots de passe" style="-fx-background-radius: 5;" />
+                        <Button fx:id="connecSignin" contentDisplay="TEXT_ONLY" layoutX="195.0" layoutY="443.0" mnemonicParsing="false" onAction="#ajouterpersonne" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: f82249; -fx-background-radius: 5;" text="s'inscrire" textFill="#060c22" />
+                    </children>
+                </AnchorPane>
+                <Button fx:id="connecter" contentDisplay="TEXT_ONLY" layoutX="30.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: f82249; -fx-background-radius: 5;" text="se connecter" />
+                <Button fx:id="inscrire" contentDisplay="TEXT_ONLY" layoutX="30.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: f82249; -fx-background-radius: 5;" text="s'inscrire" textFill="#060c22" />
+                <AnchorPane fx:id="AnchorSingin" layoutX="672.0" prefHeight="520.0" prefWidth="518.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+                    <children>
+                        <Label layoutX="185.0" layoutY="48.0" prefHeight="18.0" prefWidth="155.0" text="se connecter" textFill="#ff002f">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="email" layoutX="78.0" layoutY="191.0" prefHeight="51.0" prefWidth="370.0" promptText="email" style="-fx-background-radius: 5;" />
+                        <PasswordField fx:id="mdps" layoutX="78.0" layoutY="278.0" prefHeight="51.0" prefWidth="369.0" promptText="mots de passe" style="-fx-background-radius: 5;" />
+                        <Button fx:id="connexion" contentDisplay="TEXT_ONLY" layoutX="195.0" layoutY="362.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: f82249; -fx-background-radius: 5;" text="connexion" textFill="#060c22" />
+                  <ImageView fx:id="close" fitHeight="20.0" fitWidth="18.0" layoutX="495.0" layoutY="5.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/close-button.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="198.0" layoutY="-4.0" prefHeight="606.0" prefWidth="470.0" style="-fx-background-color: rgba(6, 12, 34, 0.98);">
+            <children>
+                <Label layoutX="42.0" layoutY="297.0" prefHeight="101.0" prefWidth="435.0" text="Films, séries TV et bien " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="37.0" />
+                    </font>
+                </Label>
+                <Label layoutX="135.0" layoutY="262.0" prefHeight="70.0" prefWidth="206.0" text="Ravis de vous revoir ! " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="107.0" layoutY="341.0" prefHeight="94.0" prefWidth="262.0" text="plus en illimité." textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="35.0" />
+                    </font>
+                </Label>
+                <ImageView fitWidth="150" layoutX="32.0" layoutY="75.0" preserveRatio="true" smooth="true">
+                    <image>
+                        <Image url="@../img/Image1.png" />
+                    </image>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
